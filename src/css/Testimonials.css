@@ -1,0 +1,38 @@
+.testimonials {
+  background: #f1f5f8;
+  padding: 2rem 1rem;
+}
+
+.testimonials .testimonial {
+  background: white;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 1rem;
+}
+
+.testimonial > img {
+  height: 12rem;
+  width: 12rem;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 50%;
+}
+
+.testimonial .personal-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+  min-height: 8rem;
+}
+
+.testimonial .personal-info > * {
+  margin: 0.4rem 0;
+}
+
+.testimonial .description {
+  width: 80%;
+  text-align: left;
+  min-height: 10rem;
+}

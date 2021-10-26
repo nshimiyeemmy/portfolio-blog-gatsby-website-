@@ -1,0 +1,73 @@
+.general-component {
+  background: rgba(57, 233, 249, 0.6);
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 1rem 2rem;
+}
+.general-component .general-left {
+  width: 100%;
+  text-align: left;
+}
+.general-component .general-right {
+  width: 100%;
+}
+
+.general-component .general-right a {
+  padding: 13px 33px 10px;
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #212529;
+  font-size: 18px;
+  font-weight: 400;
+  background-color: #16d8d8;
+  border: 1px solid;
+  border-color: #16d8d8;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.general-component .general-right a:hover {
+  background: transparent;
+  color: #ffffff;
+}
+
+.general-component .general-left .subtitle {
+  font-size: 22px;
+  font-weight: 500;
+  /* color: #00adae; */
+  
+  color: #ffffff;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.general-component .general-left .title {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 30px;
+  margin-bottom: 1rem;
+}
+
+.general-component .general-left .description {
+  color: #ffffff;
+}
+
+@media screen and (min-width: 998px) {
+  .general-component {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .general-component > * {
+    width: 50%;
+  }
+  
+.general-component .general-right {
+  text-align: right;
+  padding-right: 2rem;
+}
+}

@@ -1,0 +1,89 @@
+.about-us {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 1rem;
+}
+
+.about-us .about-left,
+.about-us .about-right {
+  height: 100%;
+  width: 80%;
+}
+
+.about-us .about-left > img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.about-us .about-left,
+.about-us .about-right {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.about-us .about-description {
+  margin: 1.5rem 0;
+  color: #777;
+}
+
+.why-choose-us {
+  margin: 1rem;
+}
+
+.why-choose-us ul {
+  list-style-type: square;
+}
+
+.why-choose-us ul li {
+  margin: 1rem 0;
+}
+
+.mission-vision {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 1rem;
+}
+
+.mission-vision > div {
+  width: 100%;
+}
+
+@media screen and (min-width: 992px) {
+  .about-us {
+    flex-direction: row;
+    min-height: 80vh;
+    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-us .about-left,
+  .about-us .about-right {
+    width: 40%;
+    height: 50%;
+    text-align: left;
+    padding: 0 1rem;
+    margin-top: 0;
+  }
+
+  .why-choose-us ul {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .why-choose-us ul li {
+    width: 50%;
+    margin: 0.1rem 0;
+  }
+  .mission-vision {
+  flex-direction: row;
+  width: 60%;
+  margin: 3rem auto;
+  justify-content: space-around;
+}
+
+.mission-vision > div {
+  width: 40%;
+}
+}
